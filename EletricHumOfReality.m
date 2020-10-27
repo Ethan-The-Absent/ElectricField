@@ -3,7 +3,7 @@ clear; close all;
 universe = figure(1);
 
 set(universe, 'KeyPressFcn', @Key)
-scale = 100;
+scale = 30;
 SpeedOfLight = 50;
 
 particle(1).vel = [0, 0];
@@ -24,7 +24,7 @@ particle(3).pos = [50, 50];
 particle(3).charge = -10;
 particle(3).mass = 10;
 
-for c = 4:10
+for c = 4:8
 particle(c).vel = [0,0];
 particle(c).acc = [0, 0];
 particle(c).pos = [randi(scale)-scale/2,randi(scale)-scale/2];
